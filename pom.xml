@@ -359,8 +359,8 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <server>tomcat-development-server</server>
-                    <port>9966</port>
+                    <server>http://ec2-52-222-114-175.us-gov-west-1.compute.amazonaws.com</server>
+                    <port>9005</port>
                     <path>/petclinic</path>
                 </configuration>
             </plugin>
