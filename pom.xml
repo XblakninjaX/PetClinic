@@ -361,9 +361,10 @@
                 <configuration>
                     <url>http://ec2-52-222-114-175.us-gov-west-1.compute.amazonaws.com:9005/manager/text</url>
                     <server>TomcatServer</server>
-                    <path>/petclinic</path>
-                    <username>admin</username>
-                    <password>password</password>
+                    <username>admin1</username>
+                    <password>admin1</password>
+                    <path>/${project.artifactId}</path>
+                    <update>true</update>
                 </configuration>
             </plugin>
             <plugin>
