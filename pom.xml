@@ -315,7 +315,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
-                    <warName>petclinic</warName>
+                    <warName>spring-petclinic-4.2.5-SNAPSHOT</warName>
                 </configuration>
             </plugin>
             <plugin>
