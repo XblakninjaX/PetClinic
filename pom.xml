@@ -363,7 +363,7 @@
                     <server>TomcatServer</server>
                     <username>admin</username>
                     <password>password</password>
-                    <path>spring-petclinic-4.2.5-SNAPSHOT</path>
+                    <path>/spring-petclinic-4.2.5-SNAPSHOT</path>
                     <update>true</update>
                 </configuration>
             </plugin>
