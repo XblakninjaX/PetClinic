@@ -10,6 +10,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import java.net.MalformedURLException;
+import java.net.URL;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.Platform;
 
 public class FindOwnersTest {
 
@@ -21,7 +26,11 @@ public class FindOwnersTest {
 	}
 	
 	@Test
-	public void find_owners_should_list_me() throws InterruptedException {
+	public void find_owners_should_list_me() throws InterruptedException, MalformedURLException {
+	    DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+        desiredCapabilities.setBrowserName("firefox");
+        desiredCapabilities.setPlatform(Platform.WINDOWS);
+		driver  = new RemoteWebDriver(new URL("http://192.168.27.153:4444/wd/hub"), desiredCapabilities);
 		driver.get(Utils.getBaseUrl());
 		
 /*		driver.findElement(By.partialLinkText("Find owners")).click();
