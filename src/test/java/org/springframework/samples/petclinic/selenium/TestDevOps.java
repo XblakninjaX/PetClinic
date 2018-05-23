@@ -40,7 +40,7 @@ public class TestDevOps {
 	public static void startDriver() {
 		//driver = Utils.getDriver();
 		//System.setProperty("webdriver.gecko.driver","C:\\Users\\mahmun.rahman\\Desktop\\TSPi\\DevOps\\Development\\Library\\geckodriver.exe");
-		driver = new FirefoxDriver();
+		//driver = new FirefoxDriver();
 	/*	System.setProperty("webdriver.ie.driver","C:\\Users\\mahmun.rahman\\Desktop\\TSPi\\Development\\Library\\IEDriverServer_x64_3.12.0\\IEDriverServer.exe"); 
 		driver =new InternetExplorerDriver(); */
 		
