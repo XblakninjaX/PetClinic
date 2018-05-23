@@ -28,7 +28,8 @@ public class FindOwnersTest {
 	
 	@Test
 	public void find_owners_should_list_me() throws InterruptedException, MalformedURLException {
-	    DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+	    //Added following 4 lines - DW
+		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setBrowserName("firefox");
         desiredCapabilities.setPlatform(Platform.WINDOWS);
 		driver  = new RemoteWebDriver(new URL("http://192.168.27.153:4444/wd/hub"), desiredCapabilities);
