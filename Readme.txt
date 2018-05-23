@@ -1,1 +1,1 @@
-redeploy 
+updated the Selenium tests to work with selenium server
