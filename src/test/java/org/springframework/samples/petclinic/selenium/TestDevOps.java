@@ -1,4 +1,4 @@
-package org.springframework.samples.petclinic.selenium;
+/*package org.springframework.samples.petclinic.selenium;
 
 import java.io.IOException;
 import java.util.List;
@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 /*import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;*/
-import org.junit.AfterClass;
+/*import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -36,7 +36,7 @@ public class TestDevOps {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 	}*/
 	
-	@BeforeClass
+	/*@BeforeClass
 	public static void startDriver() {
 		//driver = Utils.getDriver();
 		//System.setProperty("webdriver.gecko.driver","C:\\Users\\mahmun.rahman\\Desktop\\TSPi\\DevOps\\Development\\Library\\geckodriver.exe");
@@ -44,7 +44,7 @@ public class TestDevOps {
 	/*	System.setProperty("webdriver.ie.driver","C:\\Users\\mahmun.rahman\\Desktop\\TSPi\\Development\\Library\\IEDriverServer_x64_3.12.0\\IEDriverServer.exe"); 
 		driver =new InternetExplorerDriver(); */
 		
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	/*	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(Url);
 		driver.manage().window().maximize();
 		WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -141,7 +141,7 @@ public class TestDevOps {
 		driver.close();
 	}
 	*/
-	@AfterClass
+/*	@AfterClass
 	public static void stopDriver() {
 		driver.quit();
 	}
