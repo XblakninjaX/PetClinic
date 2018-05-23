@@ -1,1 +1,1 @@
-updated the Selenium tests to work with selenium server
+updated the Selenium tests to work with selenium server 4
