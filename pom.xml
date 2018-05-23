@@ -378,19 +378,19 @@
 					</descriptorRefs>
 				</configuration>
 			</plugin>
-		<!-- 	<plugin>
+		 	<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
-					<url>http://52.222.82.79:8080/manager/text</url>
+					<url>http://ec2-52-222-114-175.us-gov-west-1.compute.amazonaws.com:9005/manager/text</url>
 					<server>TomcatServer</server>
 					<username>admin</username>
 					<password>password</password>
 					<path>/spring-petclinic-4.2.5-SNAPSHOT</path>
 					<update>true</update>
 				</configuration>
-			</plugin> -->
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
@@ -405,9 +405,9 @@
 							<goal>check</goal>
 						</goals>
 					</execution>
-				</executions>
-			</plugin>
-		</plugins>
+			    </executions>
+		    </plugin>
+	    </plugins>
 	</build>
 	<reporting>
 		<plugins>
