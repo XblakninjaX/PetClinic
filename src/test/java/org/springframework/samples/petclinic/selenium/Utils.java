@@ -5,7 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 public class Utils {
-
+/*
 	public static WebDriver getDriver() {
 		//String browserType = System.getProperty("browserType", "unknown").toLowerCase();
 		String browserType = System.getProperty("browserType", "firefox").toLowerCase();
@@ -16,6 +16,7 @@ public class Utils {
 		
 		throw new IllegalStateException("browserType property must be set to ether firefox or htmlunit!");
 	}
+	*/
 
 	public static String getBaseUrl() {
 		//return System.getProperty("base.url", "http://localhost:8080/petclinic");
