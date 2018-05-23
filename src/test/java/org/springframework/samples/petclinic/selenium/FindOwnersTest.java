@@ -20,10 +20,11 @@ public class FindOwnersTest {
 
 	private static WebDriver driver;
 
-	@BeforeClass
+	/*@BeforeClass
 	public static void startDriver() {
 		driver = Utils.getDriver();
 	}
+	*/
 	
 	@Test
 	public void find_owners_should_list_me() throws InterruptedException, MalformedURLException {
