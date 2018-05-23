@@ -332,7 +332,7 @@
 				<configuration>
 					<includes>
 						<include>**/*Tests.java</include>
-						<include>**/FindOwnerTest.java</include>
+						<include>**/*Test.java</include>
 						<include>**/Utils.java</include>
 					</includes>
 				</configuration>
