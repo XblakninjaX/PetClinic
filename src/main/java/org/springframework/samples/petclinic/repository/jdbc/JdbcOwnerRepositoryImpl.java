@@ -129,7 +129,8 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
             new JdbcPetVisitExtractor()
         );
       //---------------------------------------------------------------------------------------------------------------        
-
+      //END
+            
         Collection<PetType> petTypes = getPetTypes();
         for (JdbcPet pet : pets) {
             pet.setType(EntityUtils.getById(petTypes, PetType.class, pet.getTypeId()));
