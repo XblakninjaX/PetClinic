@@ -129,7 +129,7 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
             new JdbcPetVisitExtractor()
         );
       //---------------------------------------------------------------------------------------------------------------        
-      //END
+      //END MR
             
         Collection<PetType> petTypes = getPetTypes();
         for (JdbcPet pet : pets) {
