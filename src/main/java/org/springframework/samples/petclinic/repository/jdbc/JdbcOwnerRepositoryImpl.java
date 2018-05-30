@@ -109,12 +109,27 @@ public class JdbcOwnerRepositoryImpl implements OwnerRepository {
 
     public void loadPetsAndVisits(final Owner owner) {
         Map<String, Object> params = new HashMap<>();
-        params.put("id", owner.getId());
-        final List<JdbcPet> pets = this.namedParameterJdbcTemplate.query(
-            "SELECT pets.id, name, birth_date, type_id, owner_id, visits.id as visit_id, visit_date, description, pet_id FROM pets LEFT OUTER JOIN visits ON  pets.id = pet_id WHERE owner_id=:id",
+      //---------------------------------------------------------------------------------------------------------------        
+      //Clean  - Uncomment these for clean test
+      //---------------------------------------------------------------------------------------------------------------        
+      //              params.put("id", owner.getId());
+      //              final List<JdbcPet> pets = this.namedParameterJdbcTemplate.query(
+      //                  "SELECT pets.id as pets_id, name, birth_date, type_id, owner_id, visits.id as visit_id, visit_date, description, visits.pet_id as visits_pet_id FROM pets LEFT OUTER JOIN visits ON pets.id = visits.pet_id WHERE owner_id=:id ORDER BY pets.id",
+      //                  params,
+      //                  new JdbcPetVisitExtractor()
+      //              );
+      //---------------------------------------------------------------------------------------------------------------        
+      //Vulnerability
+      //---------------------------------------------------------------------------------------------------------------        
+
+            String sLastName=  owner.getLastName();
+            String sQLStmtm = "SELECT pets.id as pets_id, name, birth_date, type_id, owner_id, visits.id as visit_id, visit_date, description, visits.pet_id as visits_pet_id FROM pets LEFT OUTER JOIN visits ON pets.id = visits.pet_id WHERE owner_id=:id  and name='"+ sLastName +"' ORDER BY pets.id";
+            final List<JdbcPet> pets = this.namedParameterJdbcTemplate.query(sQLStmtm,
             params,
             new JdbcPetVisitExtractor()
         );
+      //---------------------------------------------------------------------------------------------------------------        
+
         Collection<PetType> petTypes = getPetTypes();
         for (JdbcPet pet : pets) {
             pet.setType(EntityUtils.getById(petTypes, PetType.class, pet.getTypeId()));
