@@ -51,9 +51,9 @@ public class FindOwnersTest {
 	
 		//driver.findElement(By.xpath("//tbody")).findElement(By.linkText("Rickard von Essen"));
 		
-		driver.findElement(By.linkText("FIND OWNERS")).click();
+		driver.findElement(By.linkText("FIND PILOTS")).click();
 
-		driver.findElement(By.linkText("Add Owner")).click();
+		driver.findElement(By.linkText("Add Pilot")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.id("firstName")).sendKeys("Priya");
 
@@ -100,9 +100,9 @@ public class FindOwnersTest {
 
 		driver.findElement(By.xpath(".//*[@id='pet']/div[2]/div/button")).click();
 
-		driver.findElement(By.linkText("FIND OWNERS")).click();
+		driver.findElement(By.linkText("FIND PILOTS")).click();
 
-		driver.findElement(By.linkText("Add Owner")).click();
+		driver.findElement(By.linkText("Add Pilot")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.id("firstName")).sendKeys("Dylan");
 
@@ -117,7 +117,7 @@ public class FindOwnersTest {
 		driver.findElement(By.xpath(".//*[@id='add-owner-form']/div[2]/div/button")).click();
 		driver.findElement(By.linkText("VETERINARIANS")).click();
 
-		driver.findElement(By.linkText("FIND OWNERS")).click();
+		driver.findElement(By.linkText("FIND PILOTS")).click();
 
 		driver.findElement(By.xpath(".//*[@id='lastName' and @name='lastName']")).click();
 

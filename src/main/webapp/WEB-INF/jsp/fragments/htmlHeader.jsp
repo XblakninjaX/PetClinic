@@ -14,7 +14,7 @@ PetClinic :: a TSPi DevOps Framework demonstration
 <spring:url value="/resources/images/favicon.png" var="favicon" />
 <link rel="shortcut icon" type="image/x-icon" href="${favicon}">
 
-<title>PetClinic :: a TSPi DevOps Framework demonstration</title>
+<title>AirforceClub :: a TSPi DevOps Framework demonstration</title>
 
 <%-- CSS generated from LESS --%>
 <spring:url value="/resources/css/petclinic.css" var="petclinicCss" />

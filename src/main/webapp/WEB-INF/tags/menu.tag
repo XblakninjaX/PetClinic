@@ -35,7 +35,7 @@
                         <c:set var="cssMenu" value=""/>
                     </c:otherwise>
                 </c:choose>
-                <li class="${cssMenu}"><a href="<spring:url value="/owners/find.html" htmlEscape="true" />"><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span> Find owners</span></a></li>
+                <li class="${cssMenu}"><a href="<spring:url value="/owners/find.html" htmlEscape="true" />"><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span> Find Pilots</span></a></li>
                 <c:choose>
                     <c:when test="${name eq 'vets'}">
                         <c:set var="cssMenu" value="active"/>
@@ -44,7 +44,7 @@
                         <c:set var="cssMenu" value=""/>
                     </c:otherwise>
                 </c:choose>
-                <li class="${cssMenu}"><a href="<spring:url value="/vets.html" htmlEscape="true" />"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><span> Veterinarians</span></a></li>
+                <li class="${cssMenu}"><a href="<spring:url value="/vets.html" htmlEscape="true" />"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><span> Engineers</span></a></li>
                 <c:choose>
                     <c:when test="${name eq 'error'}">
                         <c:set var="cssMenu" value="active"/>
@@ -53,8 +53,10 @@
                         <c:set var="cssMenu" value=""/>
                     </c:otherwise>
                 </c:choose>
-                <li class="${cssMenu}"><a href="<spring:url value="/oups.html" htmlEscape="true" />"
-                       title="trigger a RuntimeException to see how it is handled"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span><span> Error</span></a></li>
+                <%-- <li class="${cssMenu}"><a href="<spring:url value="/oups.html" htmlEscape="true" />"
+                       title="trigger a RuntimeException to see how it is handled"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span><span> Error</span></a></li> --%>
+                <li class="${cssMenu}"><a href="<spring:url value="/help.html" htmlEscape="true" />"
+                       title="Click here to get help on topic"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><span> Help</span></a></li>       
             </ul>
         </div> <%--/.nav-collapse --%>
     </div> <%--/.container-fluid --%>
