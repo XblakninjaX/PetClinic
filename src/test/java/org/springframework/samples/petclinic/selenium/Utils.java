@@ -20,7 +20,7 @@ public class Utils {
 
 	public static String getBaseUrl() {
 		//return System.getProperty("base.url", "http://localhost:8080/petclinic");
-		return System.getProperty("base.url", "http://ec2-52-222-114-175.us-gov-west-1.compute.amazonaws.com:9005/spring-petclinic-4.2.5-SNAPSHOT/");		
+		return System.getProperty("base.url", "http://ec2-52-222-114-175.us-gov-west-1.compute.amazonaws.com:9005/AirforceClub-1.0.0-SNAPSHOT");		
 		
 	}
 }
