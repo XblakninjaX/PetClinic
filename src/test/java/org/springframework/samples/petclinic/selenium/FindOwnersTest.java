@@ -96,7 +96,7 @@ public class FindOwnersTest {
 
 		Select Type = new Select(driver.findElement(By.id("type")));
 
-		Type.selectByVisibleText("cat");
+		Type.selectByVisibleText("Beechcraft");
 
 		driver.findElement(By.xpath(".//*[@id='pet']/div[2]/div/button")).click();
 
@@ -115,7 +115,7 @@ public class FindOwnersTest {
 		driver.findElement(By.id("telephone")).sendKeys("7034567890");
 
 		driver.findElement(By.xpath(".//*[@id='add-owner-form']/div[2]/div/button")).click();
-		driver.findElement(By.linkText("VETERINARIANS")).click();
+		driver.findElement(By.linkText("ENGINEERS")).click();
 
 		driver.findElement(By.linkText("FIND PILOTS")).click();
 
