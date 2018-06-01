@@ -390,7 +390,7 @@
 					<server>TomcatServer</server>
 					<username>admin</username>
 					<password>password</password>
-					<path>/AirforceClub-1.0.0-SNAPSHOT</path>
+					<path>/airforceclub</path>
 					<update>true</update>
 				</configuration>
 			</plugin>
