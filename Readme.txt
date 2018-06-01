@@ -1,1 +1,1 @@
-updated the Selenium tests to work with selenium server 5
+Testing sending status from jenkins to gitlab
