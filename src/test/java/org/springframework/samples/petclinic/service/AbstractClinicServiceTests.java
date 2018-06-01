@@ -71,7 +71,7 @@ public abstract class AbstractClinicServiceTests {
         assertThat(owner.getLastName()).startsWith("Franklin");
         assertThat(owner.getPets().size()).isEqualTo(1);
         assertThat(owner.getPets().get(0).getType()).isNotNull();
-        assertThat(owner.getPets().get(0).getType().getName()).isEqualTo("cat");
+        assertThat(owner.getPets().get(0).getType().getName()).isEqualTo("Beechcraft");
     }
 
     @Test
@@ -121,9 +121,9 @@ public abstract class AbstractClinicServiceTests {
         Collection<PetType> petTypes = this.clinicService.findPetTypes();
 
         PetType petType1 = EntityUtils.getById(petTypes, PetType.class, 1);
-        assertThat(petType1.getName()).isEqualTo("cat");
+        assertThat(petType1.getName()).isEqualTo("Beechcraft");
         PetType petType4 = EntityUtils.getById(petTypes, PetType.class, 4);
-        assertThat(petType4.getName()).isEqualTo("snake");
+        assertThat(petType4.getName()).isEqualTo("Learjet31");
     }
 
     @Test
@@ -170,8 +170,8 @@ public abstract class AbstractClinicServiceTests {
         Vet vet = EntityUtils.getById(vets, Vet.class, 3);
         assertThat(vet.getLastName()).isEqualTo("Douglas");
         assertThat(vet.getNrOfSpecialties()).isEqualTo(2);
-        assertThat(vet.getSpecialties().get(0).getName()).isEqualTo("dentistry");
-        assertThat(vet.getSpecialties().get(1).getName()).isEqualTo("surgery");
+        assertThat(vet.getSpecialties().get(0).getName()).isEqualTo("aircraft");
+        assertThat(vet.getSpecialties().get(1).getName()).isEqualTo("navigation");
     }
 
     @Test
