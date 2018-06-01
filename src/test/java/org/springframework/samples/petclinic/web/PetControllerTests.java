@@ -60,7 +60,7 @@ public class PetControllerTests {
     public void testProcessCreationFormSuccess() throws Exception {
         mockMvc.perform(post("/owners/{ownerId}/pets/new", TEST_OWNER_ID)
             .param("name", "Betty")
-            .param("type", "hamster")
+            .param("type", "Embraer")
             .param("birthDate", "2015/02/12")
         )
             .andExpect(status().is3xxRedirection())
@@ -91,7 +91,7 @@ public class PetControllerTests {
     public void testProcessUpdateFormSuccess() throws Exception {
         mockMvc.perform(post("/owners/{ownerId}/pets/{petId}/edit", TEST_OWNER_ID, TEST_PET_ID)
             .param("name", "Betty")
-            .param("type", "hamster")
+            .param("type", "Embraer")
             .param("birthDate", "2015/02/12")
         )
             .andExpect(status().is3xxRedirection())
