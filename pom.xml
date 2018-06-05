@@ -330,12 +330,11 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.13</version>
 				<configuration>
-                    <skipTests>true</skipTests>
-					<!--<includes>
+					<includes>
 						<include>**/*Tests.java</include>
-						<include>**/*Test.java</include>
-						<include>**/Utils.java</include> 
-					</includes>-->
+						<!--<include>**/*Test.java</include>
+						<include>**/Utils.java</include> -->
+					</includes>
 				</configuration>
 			</plugin>
 			<plugin>
