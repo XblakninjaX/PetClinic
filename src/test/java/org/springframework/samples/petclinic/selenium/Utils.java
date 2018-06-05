@@ -1,10 +1,10 @@
-package org.springframework.samples.petclinic.selenium;
+/*package org.springframework.samples.petclinic.selenium;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
-public class Utils {
+public class Utils {*/
 /*
 	public static WebDriver getDriver() {
 		//String browserType = System.getProperty("browserType", "unknown").toLowerCase();
@@ -18,9 +18,9 @@ public class Utils {
 	}
 	*/
 
-	public static String getBaseUrl() {
+	/*public static String getBaseUrl() {
 		//return System.getProperty("base.url", "http://localhost:8080/petclinic");
 		return System.getProperty("base.url", "http://ec2-52-222-114-175.us-gov-west-1.compute.amazonaws.com:9005/airforceclub");		
 		
 	}
-}
+}*/
