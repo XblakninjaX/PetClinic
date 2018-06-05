@@ -8,7 +8,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 
 	<name>airforceclub</name>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<properties>
 
