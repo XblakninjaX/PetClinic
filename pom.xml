@@ -304,10 +304,10 @@
 			<testResource>
 				<!-- declared explicitly so Spring config files can be placed next to 
 					their corresponding JUnit test class -->
-				<directory>/test/java</directory>
+				<directory>${project.basedir}/test/java</directory>
 			</testResource>
 			<testResource>
-				<directory>/test/resources</directory>
+				<directory>${project.basedir}/test/resources</directory>
 			</testResource>
 		</testResources>
 		<plugins>
