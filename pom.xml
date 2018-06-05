@@ -342,7 +342,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
-					<warName>AirforceClub-1.0.0-SNAPSHOT</warName>
+					<warName>AirforceClub</warName>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -376,10 +376,11 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>2.4</version>
 				<configuration>
-                    <outputDirectory>target</outputDirectory>
+                    
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
+                    <outputDirectory>target</outputDirectory>
 				</configuration>
 			</plugin>
 		 	<plugin>
