@@ -1,4 +1,4 @@
-package org.springframework.samples.petclinic.selenium;
+/*package org.springframework.samples.petclinic.selenium;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ import org.openqa.selenium.Platform;
 
 public class FindOwnersTest {
 
-	private static WebDriver driver;
+	private static WebDriver driver;*/
 
 	/*@BeforeClass
 	public static void startDriver() {
@@ -26,15 +26,15 @@ public class FindOwnersTest {
 	}
 	*/
 	
-	@Test
+	/*@Test
 	public void find_owners_should_list_me() throws InterruptedException, MalformedURLException {
 	    //Added following 4 lines - DW
 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setBrowserName("firefox");
         desiredCapabilities.setPlatform(Platform.WINDOWS);
 		driver  = new RemoteWebDriver(new URL("http://ec2-52-61-46-179.us-gov-west-1.compute.amazonaws.com:4444/wd/hub"), desiredCapabilities);
-		driver.get(Utils.getBaseUrl());
-		
+		driver.get(Utils.getBaseUrl());*/
+		//dont need this stuff till  next comment
 /*		driver.findElement(By.partialLinkText("Find owners")).click();
 		driver.findElement(By.linkText("Add Owner")).click();
 		
@@ -50,8 +50,8 @@ public class FindOwnersTest {
 		driver.findElement(By.xpath("//button")).click();*/
 	
 		//driver.findElement(By.xpath("//tbody")).findElement(By.linkText("Rickard von Essen"));
-		
-		driver.findElement(By.linkText("FIND PILOTS")).click();
+		//above to previous comment
+		/*driver.findElement(By.linkText("FIND PILOTS")).click();
 
 		driver.findElement(By.linkText("Add Pilot")).click();
 		Thread.sleep(5000);
@@ -130,4 +130,4 @@ public class FindOwnersTest {
 	public static void stopDriver() {
 		driver.quit();
 	}
-}
+}*/
