@@ -20,7 +20,7 @@ public class Utils {
 
 	public static String getBaseUrl() {
 		//return System.getProperty("base.url", "http://localhost:8080/petclinic");
-		return System.getProperty("base.url", "http://openshift-jee-sample-project123.7e14.starter-us-west-2.openshiftapps.com/AirforceClub/");		
+		return System.getProperty("base.url", "http://openshift-jee-sample-airforcedemo.b9ad.pro-us-east-1.openshiftapps.com/AirforceClub/");		
 		
 	}
 }
